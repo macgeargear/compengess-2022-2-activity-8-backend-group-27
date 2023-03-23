@@ -110,7 +110,7 @@ exports.getCourses = (req, res) => {
   try {
     console.log(req.session.token.access_token);
     const courseOptions = {
-      header: {
+      headers: {
         Authorization: `Bearer ${req.session.token.access_token}`,
       },
     };
