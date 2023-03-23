@@ -170,7 +170,7 @@ exports.getCourseAssignments = (req, res) => {
     );
     Req.on("error", (err) => {
       console.log(err);
-      console.log("Please logout, then login again.");
+      // console.log("Please logout, then login again.");
     });
     Req.end();
   } catch (err) {
