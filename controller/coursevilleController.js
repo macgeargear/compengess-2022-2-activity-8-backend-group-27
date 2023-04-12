@@ -108,7 +108,7 @@ exports.getProfileInformation = (req, res) => {
 exports.getCourses = (req, res) => {
   // You should change the response below.
   try {
-    console.log(req.session.token.access_token);
+    // console.log(req.session.token.access_token);
     const courseOptions = {
       headers: {
         Authorization: `Bearer ${req.session.token.access_token}`,
@@ -149,7 +149,7 @@ exports.getCourseAssignments = (req, res) => {
 
 // Outstanding #2
 exports.getAssignmentDetail = (req, res) => {
-  const itemid = req.params.item_id;
+  const itemed = req.params.item_id;
   // You should change the response below.
   res.send("This route should get assignment details based on item_id.");
   res.end();
